@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEP Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav id="navbar">
+            <img src="logo.png" alt="DEP Logo">
+            <ul>
+                <li class="item">Home</li>
+                <li class="item">Services</li>
+                <li class="item">Our Clients</li>
+                <li class="item">Contact Us</li>
+            </ul>
+            <button class="btn">Apply Now</button>
+        </nav>
+    </header>
+    <div class="stepcontainer">
+      <div class="form-steps">
+    <div class="step-circle" data-step="1">
+        <span class="step-number">1</span>
+        <span class="step-label">Personal Details</span>
+
+    </div>
+    <span class="line"></span>
+    <div class="step-circle" data-step="2">
+        <span class="step-number">2</span>
+        <span class="step-label">Academic Details</span>
+    </div>
+    <span class="line"></span>
+    <div class="step-circle" data-step="3">
+        <span class="step-number">3</span>
+        <span class="step-label">Social Details</span>
+    </div>
+    <span class="line"></span>
+    <div class="step-circle" data-step="4">
+        <span class="step-number">4</span>
+        <span class="step-label">Professional Details</span>
+    </div>
+</div>
+</div>
+    <div class="container">
+      
+
+
+
+        <form id="stepForm">
+            <!-- Step 1: Personal Details -->
+            <div class="form-step form-step-active" data-step="1">
+                <div class=" apply" >
+                    <label>Apply For</label>
+        
+                        <input type="radio" id="director" name="applyFor" value="Director" checked>
+                        <label for="director">Director</label>
+                        <input type="radio" id="ambassador" name="applyFor" value="Ambassador">
+                        <label for="ambassador">Ambassador</label>
+                    
+                </div>
+                <div class="personal-info">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Enter Your Name Here">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter Your Email Here">
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp Number</label>
+                    <input type="text" id="whatsapp" name="whatsapp" required placeholder="Enter Your WhatsApp Number Here">
+                </div>
+                <div>
+                    <label >Gender</label>
+                    
+                        <input type="radio" id="male" name="gender" value="Male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="others" name="gender" value="Others">
+                        <label for="others">Others</label>
+                    
+                </div>
+            </div>
+                <button type="button" class="btn-next">Next</button>
+            </div>
+
+             <!-- Step 2: Academic Details -->
+            <div class="form-step " data-step="2" >
+                <div class="personal-info">
+                <div class="form-group">
+                    <label for="instituteName">Institute Name</label>
+                    <input type="text" id="instituteName" name="instituteName" required placeholder="Enter Your Institute Name Here">
+                </div>
+                <div class="form-group">
+                    <label for="fieldOfStudy">Field of Study</label>
+                    <input type="text" id="fieldOfStudy" name="fieldOfStudy" required placeholder="Enter Your Degree Name Here">
+                </div>
+                <div class="form-group">
+                    <label for="yearOfStudy">Year of Study</label>
+                    <input type="text" id="yearOfStudy" name="yearOfStudy" required placeholder="Enter Your Passing Year Here">
+                </div>
+                <div class="form-group">
+                    <label for="chooseRegion">Choose Region</label>
+                    <input type="text" id="chooseRegion" name="chooseRegion" required placeholder="Enter Your Region Here">
+                </div>
+                </div>
+                <button type="button" class="btn-next">Next</button>
+            </div>
+   <!-- Step 3: Social Details -->
+            <div class="form-step " data-step="3" >
+                <div class="personal-info">
+                <div class="form-group">
+                    <label for="facebookLink">Facebook Link</label>
+                    <input type="text" id="facebookLink" name="facebookLink" placeholder="Optional">
+                </div>
+                <div class="form-group">
+                    <label for="InstagramLink">Instagram Link</label>
+                    <input type="text" id="InstagramLink" name="InstagramLink" placeholder="Optional">
+                </div>
+                <div class="form-group">
+                    <label for="LinkedinLink">Linkedin Link</label>
+                    <input type="text" id="LinkedinLink" name="LinkedinLink" placeholder="Optional">
+                </div>
+                </div>
+                <button type="button" class="btn-next">Next</button>
+            </div>
+
+ <!-- Step 4: Professional Details -->
+            <div class="form-step" data-step="4">
+                <div class="personal-info">
+                <div class="form-group">
+                    <label for="experience">Explain your previous experiences</label>
+                    <textarea class="experience" id="experience" name="experience" required ></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Select Your Best Skills</label>
+                    <div class="checkbox-group">
+                        <div>
+                            <input type="checkbox" id="skill1" name="skills" value="Leadership" checked="">
+                            <label for="skill1">Leadership</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skill2" name="skills" value="Communication">
+                            <label for="skill2">Communication</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skill3" name="skills" value="Teamwork">
+                            <label for="skill3">Teamwork</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skill4" name="skills" value="Leadership" >
+                            <label for="skill4">Leadership</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skill5" name="skills" value="Communication">
+                            <label for="skill5">Communication</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skill6" name="skills" value="Teamwork">
+                            <label for="skill6">Teamwork</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skill7" name="skills" value="Leadership" >
+                            <label for="skill7">Leadership</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skill8" name="skills" value="Communication">
+                            <label for="skill8">Communication</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skill9" name="skills" value="Teamwork">
+                            <label for="skill9">Teamwork</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skill10" name="skills" value="Leadership">
+                            <label for="skill10">Leadership</label>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <button type="submit" class="btn-next">Apply</button>
+            </div>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="logo.png" alt="DEP Logo" class="logo">
+        </div>
+        <div class="footer-middle">
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="footer-right">
+            <a href="#"><img src="fb.png" alt="Facebook" class="icon"></a>
+            <a href="#"><img src="ig.png" alt="Instagram" class="icon"></a>
+            <a href="#"><img src="tw.png" alt="Twitter" class="icon"></a>
+            <a href="#"><img src="li.png" alt="LinkedIn" class="icon"></a>
+            <a href="#"><img src="wa.png" alt="WhatsApp" class="icon"></a>
+        </div>
+    </footer>
+   
+</body>
+</html>
